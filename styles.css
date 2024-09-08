@@ -1,0 +1,7 @@
+.hero-profile-image {
+    width: 100%;  /* Image will adjust to its parent container's width */
+    height: auto; /* Adjust height proportionally to the width */
+    max-width: 200px; /* Limits the size of the image */
+    object-fit: cover;
+}
+

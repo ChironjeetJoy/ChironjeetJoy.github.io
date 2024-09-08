@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Chironjeet Das Joy</title>
+
+    <meta name="author" content="Chironjeet Das Joy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/chiro.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<style>
+body, div, p, a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 13px;
+    word-spacing: -1px;
+    color: #383737;
+    letter-spacing: -0.15px;
+}
+body {
+    margin: 0px !important;
+}
+h2 {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+body.dark-mode {
+    background: #0d1117;
+    transition: color 0.3s ease;
+}
+.main-div {
+    width: 100%;
+    max-width: 1200px;
+    border: 0px;
+    box-shadow: 0 0 1px 1.5px #dddddd00;
+    border-left: 1.5px solid #eeeeee00;
+    border-right: 1.5px solid #eeeeee00;
+    margin: 20px auto;
+}
+body.dark-mode .main-div {
+    border: 1.5px solid #0a151a;
+    box-shadow: 0 0 1px 1.5px #040d11;
+    background: #091b23;
+}
+@media only screen and (min-width: 600.01px) {
+    .hero-section-1-and-2 {
+        display: flex;
+    	flex-direction: row-reverse;
+    	align-items: flex-start;
+    }
+    .hero-section {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	padding: 20px;
+	width: 40%;
+    }
+    .hero-section-2 {
+        width: 60%;
+    }
+    name {
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-size: 32px;
+    }
+    .hero-section-sub-1 {
+	max-width: 65%;
+    }
+    .hero-section-sub-2 {
+	max-width: 35%;
+    }
+    .hero-profile-image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0 0 0.5px 0.8px #cccccc00;
+	border: 1px solid #dddddd00;
+	padding: 0px;
+    }
+    .publication-section-div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	gap: 40px;
+	padding: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hero-section {
+	display: flex;
+	padding: 20px 10px;
+	flex-direction: column-reverse;
+	align-items: center;
+    }
+    name {
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-size: 28px;
+    }
+    .hero-section-sub-1 {
+	max-width: 100%;
+	text-align: center;
+	padding: 0 10px;
+    }
+    .hero-section-sub-2 {
+	max-width: 100%;
+	padding: 0 10px;
+    }
+    .hero-profile-image {
+	width: 100%;
+	max-width: 200px;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0 0 0.5px 0.8px #cccccc00;
+	border: 1px solid #dddddd00;
+	padding: 0px;
+    }
+   .my-links-div {
+	justify-content: center;
+    }
+    .publication-section-div {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+	gap: 20px;
+    }
+}
+.sub-div, .about-me-div {
+    padding: 20px 20px 10px;
+    border-top: 2px solid #eeeeee00;
+}
+body.dark-mode .sub-div {
+    border-top: 2px solid #0a151a;
+}
+body.dark-mode .publication-section-div {
+    border: 1.5px solid #0a151a;
+}
+img {
+    border: 1px solid #eeeeee00;
+    padding: 0px;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+}
+.my-links-div {
+    border-top: 2px solid #eeeeee00;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+body.dark-mode .my-links-div {
+    border-top: 2px solid #0a151a;
+}
+a.my-link {
+    border: 1px solid #ddd;
+    padding: 2px 10px;
+    border-radius: 100px;
+    background: #e8f2f600;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #000 !important;
+}
+body.dark-mode a.my-link {
+    border: 1.5px solid #091f1e;
+    padding: 5px 10px 7px;
+    border-radius: 100px;
+    background: #09231f;
+    box-shadow: 0 0 1px 1px #061413;
+}
+a {
+    color:#1772d0; 
+    text-decoration:none;
+}
+body.dark-mode a {
+    color: #beaa23!important;
+}
+p {
+    font-size: 13px;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    line-height: 20px;
+}
+body.dark-mode p {
+    color: #ddd;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+footer p {
+    margin: 0;
+}
+
+
+.dark-mode-div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+button#darkModeToggle {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 2px solid #ddd;
+    margin: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.dark-mode button#darkModeToggle {
+    background: #1a1a1a;
+    color: #fff;
+    border: 1.5px solid #181818;
+    box-shadow: 0 0 1px 1px #0c0c0c;
+}
+body.dark-mode #darkModeToggle {
+    color: #fff; /* Dark mode color */
+}
+</style>
+
+<body>
+<div class="main-div">
+	<div class="dark-mode-div" style="display:none;">
+	    <button id="darkModeToggle">
+		<i id="darkModeIcon" class="fas fa-moon"></i>
+	    </button>
+	</div>
+	<script>
+	// Get the toggle button and icon elements
+	const toggleButton = document.getElementById('darkModeToggle');
+	const darkModeIcon = document.getElementById('darkModeIcon');
+	
+	// Check the saved dark mode preference in localStorage
+	const isDarkMode = localStorage.getItem('dark-mode') === 'true';
+	
+	// Apply the saved dark mode preference
+	if (isDarkMode) {
+	    document.body.classList.add('dark-mode');
+	    darkModeIcon.classList.remove('fa-moon');
+	    darkModeIcon.classList.add('fa-sun');
+	}
+	
+	// Event listener for the toggle button
+	toggleButton.addEventListener('click', () => {
+	    // Toggle dark mode
+	    document.body.classList.toggle('dark-mode');
+	    
+	    // Update the icon based on the dark mode status
+	    if (document.body.classList.contains('dark-mode')) {
+		darkModeIcon.classList.remove('fa-moon');
+		darkModeIcon.classList.add('fa-sun');
+		localStorage.setItem('dark-mode', 'true'); // Save dark mode preference
+	    } else {
+		darkModeIcon.classList.remove('fa-sun');
+		darkModeIcon.classList.add('fa-moon');
+		localStorage.setItem('dark-mode', 'false'); // Save light mode preference
+	    }
+	});
+	</script>
+	<div style="width:100%; margin-right:auto; margin-left:auto;">
+	    <div class="hero-section-1-and-2">
+		<div class="hero-section">
+		    <div class="hero-section-sub-1">
+		        <p style="text-align:center; font-size:32px; font-family: 'Lato', Verdana, Helvetica, sans-serif;">
+			    <name>Chironjeet Das Joy</name>
+		        </p>
+			<div class="my-links-div">
+			    <a class="my-link" style="text-decoration:none;" href="mailto:chironjeet.das.joy@g.bracu.ac.bd">
+			        <i class="fas fa-envelope"></i> Email
+			    </a>
+			    <a class="my-link" style="text-decoration:none;" href="assets/Chironjeet Das Joy - CV.pdf">
+			        <i class="fas fa-file-alt"></i> CV
+			    </a>
+			    <a class="my-link" style="text-decoration:none;" href="https://www.linkedin.com/in/chironjeet-das-joy-9a372715b" target="_blank">
+			        <i class="fab fa-linkedin"></i> LinkedIn
+			    </a>
+				<a class="my-link" style="text-decoration:none;" href="https://www.researchgate.net/profile/Chironjeet-Joy" target="_blank">
+			        <i class="fab fa-researchgate"></i> ResearchGate
+			    </a>
+				<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2f70fb173b9000da126c79afe2098f02.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=Chironjeeet&amp;show_count=false&amp;show_screen_name=false&amp;size=m&amp;time=1725737828091" style="position: static; visibility: visible; width: 76px; height: 20px;" data-screen-name="Chironjeeet"></iframe>
+			</div>
+		    </div>
+		    <div class="hero-section-sub-2">
+				<img class="hero-profile-image" alt="profile photo" src="assets/chiro.png" style="border-radius: 0; width: 220px; height: 250px;">
+			</div>
+			
+	        </div>
+	        <div class="hero-section-2">
+		    <div class="about-me-div">
+			
+			<p style="text-align: justify;">I am a final semester Undergraduate student in the EEE department at the <a style="color:#1772d0; text-decoration:none;" href="https://www.bracu.ac.bd">BRAC University</a>, advised by <a style="color:#1772d0; text-decoration:none;" href="https://www.bracu.ac.bd/about/people/abu-sm-mohsin-phd">Dr. Mohsin</a>. I am currently working in <a style="color:#1772d0; text-decoration:none;" href="https://www.linkedin.com/company/braculasset">LASSET</a> as an Undergradute Reseach Assistant mentored by <a style="color:#1772d0; text-decoration:none;" href="https://abdullahilkafi.com">Abdulla Hil Kafi </a> . </p>
+			<p style="text-align: justify;"> I am actively seeking for Masters of Science or PhD opportunities to further deepen my expertise, contribute to cutting-edge research, and collaborate on innovative projects that align with my passion as well as research interests.</p>
+		    </div>
+		    <div class="sub-div">
+			<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400;text-decoration: underline;">Research Interests</h2>
+			<p style="font-size: 14px; text-align: justify; font-family: 'Lato', Verdana, Helvetica, sans-serif;">My research centers on Autonomous Dexterous Robotic Manipulation Systems, Computer Vision, and Sensory Infusion, with the goal of advancing robotic precision and adaptability. Leveraging my expertise in machine learning, deep learning, and computer vision, along with extensive experience in various research labs, I am well-positioned to drive innovation and contribute to cutting-edge developments in modern robotics.</p>
+		    </div>
+
+			<div class="sub-div">
+			<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400;text-decoration: underline;">Thesis/FYDP</h2>
+			</div>
+
+			<div class="publication-section-div">
+				<div class="publications-section-1">
+					<img src='assets/7dofARM.png' width="100%" />
+				</div>
+				<div class="publications-section-2">
+					<a style="color:#000000; text-decoration:none;" >
+					<papertitle>Unmanned System for Fetching and Shelving Drugs in Pharmaceutical Facilities</papertitle>
+					</a>
+					<em>(On progress)</em>
+					<br>
+					<p style="text-align: justify;">This project aims to engineer a fully autonomous robotic arm specifically designed for pharmaceutical environments, tasked with the accurate shelving and retrieval of medication boxes utilizing visual data inputs, such as stereo vision, coupled with robust dexterous manipulation techniques. The initiative involves the development of a custom-built 7-degree-of-freedom (DOF) robotic arm, entirely fabricated in-house to enhance affordability and facilitate straightforward deployment. (Project Lead)</p>
+					<footer style="background-color: #f8f8f800;color: #333;text-align: start;padding: 1rem 0;margin-top: 0.1rem;border-top: 2px solid #eeeeee00;">
+						<p style="text-align: justify;">*** The University Grant Commission (Bangladesh) addresses Thesis as FYDP(Final Year DesignProject)</p>
+					</footer>
+				</div>
+				</div>
+				<div class="sub-div">
+					<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400;text-decoration: underline;">On-Going Work</h2>
+					</div>
+		
+					<div class="publication-section-div">
+						<div class="publications-section-1">
+							<img src='assets/RAven.jpg' width="90%" />
+						</div>
+						<div class="publications-section-2">
+							<a style="color:#000000; text-decoration:none;" >
+							<papertitle>RAVEN</papertitle>
+							</a>
+							<em>(On progress)</em> 
+							<br>
+							<p style="text-align: justify;"> This project is driven by the challenges faced in stabilizing drones within complex aerodynamic conditions during rescue operations. It employs an Inertial Measurement Unit (IMU) on the flight controller to ascertain the drone's Cartesian position. While a conventional PID controller is currently used, transitioning to a Neural Network approach could potentially yield better stabilization results. To further this development, a controlled environment is being constructed entirely from scratch, equipped with infrared tracking cameras. This setup is designed to simulate complex aerodynamic scenarios and capture the 3D position of the drone, allowing for precise comparison with IMU data. (Project Lead)</p>
+						</div>
+						</div>
+
+
+
+
+		    <div class="sub-div">
+				<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400; text-decoration: underline;">Publications</h2>
+		    </div>
+			
+		    <div class="publication-section-div">
+				<div class="publications-section-1">
+					<img src='assets/soyabean.png' width="100%" />
+				</div>
+				<div class="publications-section-2">
+					<a style="color:#1772d0; text-decoration:none;" href="https://www.researchgate.net/publication/380727995_OPTIMISING_SOYBEAN_PRODUCTION_WITH_GROUND_SENSOR_TERMINAL-BASED_MONITORING_SYSTEM">
+					<papertitle>Optimizing Soyabean Poduction With Ground Sensor Terminal-Based Monitoring System.
+					</papertitle>
+					</a>
+					<br>
+					<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
+					<strong>Chironjeet Das Joy</strong>,
+					<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Prapty-Majumder-Golpa"> Prapty Majumder Golpa</a>,
+					<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Raihana-Antara"> Raihana Shams Islam Antara</a>,
+					<br>
+					<em>IAC</em>, 2023
+					<br>
+					<p style="text-align: justify;">Engineered and deployed a sophisticated time series data acquisition system for the Satellite Ground Sensory Terminal Project, leveraging an array of sensory inputs to facilitate remote monitoring of agricultural fields in rural locations through the KITSUNE Satellite. This system was meticulously designed to be compact and readily deployable, playing a pivotal role in the conceptualization and successful implementation of the project. (Lead system developer)</p>
+				</div>
+				</div>
+		
+		    <div class="publication-section-div">
+			<div class="publications-section-1">
+			    <img src='assets/mall.png' width="100%" />
+			</div>
+			<div class="publications-section-2">
+			    <a style="color:#000000; text-decoration:none;" >
+				<papertitle>Risk factor identification and classification of malnutrition among under-five children in Bangladesh: Machine learning and statistical approach,
+				</papertitle>
+			    </a>
+			    <br>
+			    <a style="color:#9600fa; text-decoration:none;" href="https://www.bracu.ac.bd/about/people/tasfin-mahmud"> Tasfin Mahmud</a>,
+			    <a style="color:#9600fa; text-decoration:none;" href="https://bd.linkedin.com/in/tayab-uddin-wara-09a12221b"> Tayab Uddin Wara</a>,
+			    <strong>Chironjeet Das Joy</strong>,
+			    <br>
+			    <em>Heliyon</em>, (Under Review)
+			    <br>
+			    <p style="text-align: justify;">This study examines factors contributing to malnutrition in under-five children using data from the MICS-2019 survey, employing Decision Tree, Random Forest, Support Vector Machine, and Multi-layer Perceptron (MLP) models. Random Forest and MLP showed excellent performance, with accuracies of 98.55% and 98.69%, respectively. Pearson correlation analysis revealed key factors like Weight for Age Z Score (WAZ2), Weight for Height Z Score (WHZ2), and breastfeeding status as significant contributors to malnutrition. The findings provide valuable insights into the classification and prediction of malnutrition stages.</p>
+			</div>
+		    </div>
+		    <div class="publication-section-div">
+			<div class="publications-section-1">
+			    <img src='assets/navo.png' width="100%" />
+			</div>
+			<div class="publications-section-2">
+			    <a style="color:#1772d0; text-decoration:none;" href="https://www.researchgate.net/publication/378144563_Navigating_the_Challenges_of_Inflation_and_Material_Scarcity_in_Space_Programmes">
+				<papertitle>Navigating the Challenges of Inflation and Material Scarcity in Space Programmes</papertitle>
+			    </a>
+			    <br>
+			    <strong>Chironjeet Das Joy</strong>,
+			    <a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Raihana-Antara"> Raihana Shams Islam Antara</a>,
+				<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
+			    <br>
+			    <em>IAC</em>, 2023
+			    <br>
+			    <p style="text-align: justify;">Global inflation rose from 4.7% in 2021 to 8.8% in 2022, driven by rising fuel prices and supply chain disruptions. Electronics manufacturers face material shortages and high costs, with no immediate relief despite central banks' efforts.</p>
+			</div>
+		    </div>
+		    
+		    <div class="sub-div">
+			<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400; text-decoration: underline;">Grad Course and Other Projects</h2>
+		    </div>
+			<div class="publication-section-div">
+				<div class="publications-section-1">
+					<img src='assets/nanosat.jpg' width="100%" />
+				</div>
+				<div class="publications-section-2">
+					<a style="color:#000000; text-decoration:none;">
+					<papertitle>NANO Satellite.
+					</papertitle>
+					</a>
+					<br> 
+					<p> EEE383 Electronic System Design with <a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,  </p>
+					<p style="text-align: justify;">Partnered with five graduate students on a NANO Satellite project, focusing on data collection and transmission from multiple ground stations to a centralized control system. I was responsible for designing and implementing both the payload and communication subsystems.</p>
+				</div>
+				</div>
+		
+		    <div class="publication-section-div">
+			<div class="publications-section-1">
+			    <img src='assets/fr.jpg' width="100%" />
+			</div>
+			<div class="publications-section-2">
+			    <a style="color:#000000; text-decoration:none;" >
+				<papertitle> The Flying Raijin
+
+				</papertitle>
+				<p style="text-align: justify;">(Independent project)</p>
+			
+			    </a>
+			    <p style="text-align: justify;">Named after the Fourth Hokage's teleportation technique in "Naruto," the Flying Raijin is a custom-built 5-inch FPV drone engineered for exceptional speed, accelerating from 0 to 150 km/h in just 2 seconds, as verified by the onboard GPS module. The drone utilizes an STM32 F411 MCU and operates on a 16V system. It is equipped with a high-resolution camera, a low-latency video transmitter, and multiple onboard sensors, all of which enhance the system's overall performance and capabilities.</p>
+			</div>
+		    </div>
+
+		    
+		</div>
+	    </div>
+	</div>
+
+	<footer style="background-color: #f8f8f800;color: #333;text-align: center;padding: 1rem 0;margin-top: 2rem;border-top: 2px solid #eeeeee00;">
+		<p>© 2024 Chironjeet Das Joy. All rights reserved.</p>
+	</footer>
+</div>
+</body>
+</html>
