@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta charset="UTF-8">
     <title>Chironjeet Das Joy</title>
 
     <meta name="author" content="Chironjeet Das Joy">
@@ -22,128 +21,208 @@ body, div, p, a {
     color: #383737;
     letter-spacing: -0.15px;
 }
+
 body {
-    margin: 0px !important;
+    margin: 0 !important;
 }
+
 h2 {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
+
 body.dark-mode {
     background: #0d1117;
     transition: color 0.3s ease;
 }
+
 .main-div {
     width: 100%;
     max-width: 1200px;
-    border: 0px;
+    border: 0;
     box-shadow: 0 0 1px 1.5px #dddddd00;
     border-left: 1.5px solid #eeeeee00;
     border-right: 1.5px solid #eeeeee00;
     margin: 20px auto;
 }
+
 body.dark-mode .main-div {
     border: 1.5px solid #0a151a;
     box-shadow: 0 0 1px 1.5px #040d11;
     background: #091b23;
 }
+
 @media only screen and (min-width: 600.01px) {
     .hero-section-1-and-2 {
         display: flex;
-    	flex-direction: row-reverse;
-    	align-items: flex-start;
+        flex-direction: row-reverse;
+        align-items: flex-start;
     }
+
     .hero-section {
-	display: flex;
-	flex-direction: column-reverse;
-	align-items: center;
-	padding: 20px;
-	width: 40%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+        width: 40%;
     }
+
     .hero-section-2 {
         width: 60%;
     }
+
     name {
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 32px;
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-size: 32px;
     }
+
     .hero-section-sub-1 {
-	max-width: 65%;
+        max-width: 65%;
     }
+
     .hero-section-sub-2 {
-	max-width: 35%;
+        max-width: 35%;
     }
+
     .hero-profile-image {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	box-shadow: 0 0 0.5px 0.8px #cccccc00;
-	border: 1px solid #dddddd00;
-	padding: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 0.5px 0.8px #cccccc00;
+        border: 1px solid #dddddd00;
+        padding: 0;
     }
+
     .publication-section-div {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	gap: 40px;
-	padding: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 40px;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: flex-start;
+    }
+
+    .publications-section-1 {
+        width: 40%;
+        flex: 0 0 40%;
+    }
+
+    .publications-section-2 {
+        width: 60%;
+        flex: 1 1 60%;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .hero-section {
-	display: flex;
-	padding: 20px 10px;
-	flex-direction: column-reverse;
-	align-items: center;
+        display: flex;
+        padding: 20px 10px;
+        flex-direction: column-reverse;
+        align-items: center;
     }
+
     name {
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 28px;
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-size: 28px;
     }
+
     .hero-section-sub-1 {
-	max-width: 100%;
-	text-align: center;
-	padding: 0 10px;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 10px;
     }
+
     .hero-section-sub-2 {
-	max-width: 100%;
-	padding: 0 10px;
+        max-width: 100%;
+        padding: 0 10px;
     }
+
     .hero-profile-image {
-	width: 100%;
-	max-width: 200px;
-	height: 100%;
-	border-radius: 50%;
-	box-shadow: 0 0 0.5px 0.8px #cccccc00;
-	border: 1px solid #dddddd00;
-	padding: 0px;
+        width: 100%;
+        max-width: 200px;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 0.5px 0.8px #cccccc00;
+        border: 1px solid #dddddd00;
+        padding: 0;
     }
-   .my-links-div {
-	justify-content: center;
+
+    .my-links-div {
+        justify-content: center;
+        flex-wrap: wrap;
     }
+
     .publication-section-div {
-	display: flex;
-	flex-direction: column;
-	padding: 10px 20px;
-	gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .publications-section-1,
+    .publications-section-2 {
+        width: 100%;
     }
 }
+
 .sub-div, .about-me-div {
     padding: 20px 20px 10px;
     border-top: 2px solid #eeeeee00;
 }
+
 body.dark-mode .sub-div {
     border-top: 2px solid #0a151a;
 }
+
 body.dark-mode .publication-section-div {
     border: 1.5px solid #0a151a;
 }
+
 img {
     border: 1px solid #eeeeee00;
-    padding: 0px;
+    padding: 0;
     width: 200px;
     height: 150px;
     background-size: cover;
 }
+
+.project-media {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.project-video {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    display: block;
+    background: #000;
+    border-radius: 4px;
+}
+
+/* Larger layout specifically for the Adaptive Robotic Morphology video */
+@media only screen and (min-width: 600.01px) {
+    .ding-video-wrap {
+        width: 55%;
+        flex: 0 0 55%;
+    }
+
+    .ding-text-wrap {
+        width: 45%;
+        flex: 1 1 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ding-video-wrap,
+    .ding-text-wrap {
+        width: 100%;
+    }
+}
+
 .my-links-div {
     border-top: 2px solid #eeeeee00;
     display: flex;
@@ -151,9 +230,11 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 body.dark-mode .my-links-div {
     border-top: 2px solid #0a151a;
 }
+
 a.my-link {
     border: 1px solid #ddd;
     padding: 2px 10px;
@@ -164,6 +245,7 @@ a.my-link {
     gap: 7px;
     color: #000 !important;
 }
+
 body.dark-mode a.my-link {
     border: 1.5px solid #091f1e;
     padding: 5px 10px 7px;
@@ -171,21 +253,33 @@ body.dark-mode a.my-link {
     background: #09231f;
     box-shadow: 0 0 1px 1px #061413;
 }
+
 a {
-    color:#1772d0; 
-    text-decoration:none;
+    color: #1772d0;
+    text-decoration: none;
 }
+
 body.dark-mode a {
-    color: #beaa23!important;
+    color: #beaa23 !important;
 }
+
 p {
     font-size: 13px;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     line-height: 20px;
 }
+
 body.dark-mode p {
     color: #ddd;
 }
+
+body.dark-mode papertitle,
+body.dark-mode strong,
+body.dark-mode em,
+body.dark-mode h2 {
+    color: #ddd;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -193,15 +287,16 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 footer p {
     margin: 0;
 }
-
 
 .dark-mode-div {
     display: flex;
     flex-direction: row-reverse;
 }
+
 button#darkModeToggle {
     position: fixed;
     width: 35px;
@@ -216,471 +311,798 @@ button#darkModeToggle {
     align-items: center;
     justify-content: center;
 }
+
 body.dark-mode button#darkModeToggle {
     background: #1a1a1a;
     color: #fff;
     border: 1.5px solid #181818;
     box-shadow: 0 0 1px 1px #0c0c0c;
 }
+
 body.dark-mode #darkModeToggle {
-    color: #fff; /* Dark mode color */
+    color: #fff;
 }
+
+/* ================================================================
+   Academic / research homepage refinement
+   ================================================================ */
+
+:root {
+    --ink: #25313c;
+    --muted: #65727e;
+    --accent: #1f5f8b;
+    --rule: #e4e9ee;
+    --page-bg: #f5f7f9;
+    --paper: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--page-bg) !important;
+    color: var(--ink);
+}
+
+body, div, p, a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    word-spacing: normal;
+    letter-spacing: 0;
+}
+
+.main-div {
+    max-width: 1080px !important;
+    margin: 34px auto 52px !important;
+    background: var(--paper);
+    border: 1px solid #e2e7eb !important;
+    border-radius: 10px;
+    box-shadow: 0 10px 32px rgba(31, 45, 61, 0.055);
+    overflow: hidden;
+}
+
+.hero-section-1-and-2 {
+    padding: 42px 48px 34px;
+    gap: 48px;
+    box-sizing: border-box;
+    align-items: center !important;
+    border-bottom: 1px solid var(--rule);
+}
+
+.hero-section {
+    width: 32% !important;
+    padding: 0 !important;
+}
+
+.hero-section-2 {
+    width: 68% !important;
+}
+
+.hero-section-sub-1 {
+    max-width: 100% !important;
+}
+
+.hero-section-sub-2 {
+    max-width: 100% !important;
+}
+
+.hero-profile-image {
+    width: 215px !important;
+    height: 245px !important;
+    object-fit: cover;
+    border-radius: 6px !important;
+    border: 1px solid #dce2e7 !important;
+    box-shadow: 0 5px 16px rgba(31, 45, 61, 0.07) !important;
+}
+
+.about-me-div {
+    padding: 0 !important;
+}
+
+.about-me-div > p:first-child {
+    margin: 0 0 12px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 31px !important;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    color: #18232d;
+}
+
+.about-me-div p {
+    font-size: 14.5px !important;
+    line-height: 1.72;
+    color: #3f4b55;
+}
+
+.hero-section-2 > .sub-div {
+    padding: 19px 0 0 !important;
+}
+
+.content-section {
+    padding: 0 48px 34px;
+}
+
+.sub-div {
+    padding: 34px 0 9px !important;
+}
+
+.sub-div h2 {
+    margin: 0 !important;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d9e1e7;
+    font-size: 20px !important;
+    font-weight: 650 !important;
+    text-decoration: none !important;
+    color: #204f72;
+    letter-spacing: 0.1px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.68;
+    color: #3d4852;
+}
+
+a {
+    color: var(--accent);
+}
+
+papertitle {
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 650;
+    color: #1d2a35;
+}
+
+em {
+    color: var(--muted);
+}
+
+.publication-section-div {
+    width: 100% !important;
+    padding: 24px 0 !important;
+    gap: 34px !important;
+    border-bottom: 1px solid #edf0f2;
+    box-sizing: border-box;
+    align-items: flex-start !important;
+}
+
+.publications-section-1 {
+    width: 34% !important;
+    flex: 0 0 34% !important;
+}
+
+.publications-section-2 {
+    width: 66% !important;
+    flex: 1 1 66% !important;
+}
+
+/* Preserve each image's natural aspect ratio. */
+.publication-section-div img.project-media {
+    width: 100% !important;
+    max-width: 310px !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    display: block;
+    border: 1px solid #e3e7ea !important;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* Featured current project: large research video above the text. */
+.featured-project {
+    display: block !important;
+    padding-top: 20px !important;
+}
+
+.featured-project .ding-video-wrap {
+    width: min(820px, 100%) !important;
+    max-width: 820px;
+    margin: 0 auto 22px;
+}
+
+.featured-project .ding-text-wrap {
+    width: 100% !important;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-video {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #000;
+    border: 1px solid #dce2e7;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(31, 45, 61, 0.07);
+}
+
+.my-links-div {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #e7ebee !important;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+a.my-link {
+    padding: 4px 9px !important;
+    border: 1px solid #d8dfe5 !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    font-size: 12.5px;
+    color: #32414d !important;
+}
+
+a.my-link:hover {
+    background: #f6f8fa !important;
+    border-color: #c9d3db !important;
+}
+
+footer {
+    border-top: 1px solid var(--rule) !important;
+    margin-top: 0 !important;
+    padding: 18px 0 22px !important;
+}
+
+footer p {
+    font-size: 12.5px;
+    color: #7a8792;
+}
+
+@media only screen and (max-width: 760px) {
+    .main-div {
+        margin: 0 !important;
+        border-radius: 0;
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+    .hero-section-1-and-2 {
+        display: flex;
+        flex-direction: column !important;
+        padding: 28px 22px 24px;
+        gap: 24px;
+    }
+
+    .hero-section,
+    .hero-section-2 {
+        width: 100% !important;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-profile-image {
+        width: 190px !important;
+        height: 218px !important;
+    }
+
+    .about-me-div > p:first-child {
+        font-size: 27px !important;
+        text-align: center !important;
+    }
+
+    .content-section {
+        padding: 0 22px 28px;
+    }
+
+    .publication-section-div {
+        display: block !important;
+        padding: 20px 0 !important;
+    }
+
+    .publications-section-1,
+    .publications-section-2 {
+        width: 100% !important;
+    }
+
+    .publication-section-div img.project-media {
+        max-width: 100% !important;
+        margin: 0 0 16px;
+    }
+
+    .featured-project .ding-video-wrap {
+        margin-bottom: 17px;
+    }
+}
+
 </style>
 
 <body>
 <div class="main-div">
-	<div class="dark-mode-div" style="display:none;">
-	    <button id="darkModeToggle">
-		<i id="darkModeIcon" class="fas fa-moon"></i>
-	    </button>
-	</div>
-	<script>
-	// Get the toggle button and icon elements
-	const toggleButton = document.getElementById('darkModeToggle');
-	const darkModeIcon = document.getElementById('darkModeIcon');
-	
-	// Check the saved dark mode preference in localStorage
-	const isDarkMode = localStorage.getItem('dark-mode') === 'true';
-	
-	// Apply the saved dark mode preference
-	if (isDarkMode) {
-	    document.body.classList.add('dark-mode');
-	    darkModeIcon.classList.remove('fa-moon');
-	    darkModeIcon.classList.add('fa-sun');
-	}
-	
-	// Event listener for the toggle button
-	toggleButton.addEventListener('click', () => {
-	    // Toggle dark mode
-	    document.body.classList.toggle('dark-mode');
-	    
-	    // Update the icon based on the dark mode status
-	    if (document.body.classList.contains('dark-mode')) {
-		darkModeIcon.classList.remove('fa-moon');
-		darkModeIcon.classList.add('fa-sun');
-		localStorage.setItem('dark-mode', 'true'); // Save dark mode preference
-	    } else {
-		darkModeIcon.classList.remove('fa-sun');
-		darkModeIcon.classList.add('fa-moon');
-		localStorage.setItem('dark-mode', 'false'); // Save light mode preference
-	    }
-	});
-	</script>
 
-	
-	<div style="width:100%; margin-right:auto; margin-left:auto;">
-	    <div class="hero-section-1-and-2">
-		<div class="hero-section">
-		    <div class="hero-section-sub-1">
-		        <p style="text-align:center; font-size:32px; font-family: 'Lato', Verdana, Helvetica, sans-serif;">
-			    <name></name>
-		        </p>
+    <div class="dark-mode-div" style="display:none;">
+        <button id="darkModeToggle">
+            <i id="darkModeIcon" class="fas fa-moon"></i>
+        </button>
+    </div>
 
-			    
-			<div class="my-links-div">
-			    <a class="my-link" style="text-decoration:none;" href="mailto:chironjeet.das.joy@g.bracu.ac.bd">
-			        <i class="fas fa-envelope"></i> Email
-			    </a>
-			    <a class="my-link" style="text-decoration:none;" href="assets/Chironjeet Das Joy - CV.pdf">
-			        <i class="fas fa-file-alt"></i> CV
-			    </a>
-			    <a class="my-link" style="text-decoration:none;" href="https://www.linkedin.com/in/chironjeet-das-joy" target="_blank">
-			        <i class="fab fa-linkedin"></i> LinkedIn
-			    </a>
-				<a class="my-link" style="text-decoration:none;" href="https://www.researchgate.net/profile/Chironjeet-Joy" target="_blank">
-			        <i class="fab fa-researchgate"></i> ResearchGate
-			    </a>
-				<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2f70fb173b9000da126c79afe2098f02.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=Chironjeeet&amp;show_count=false&amp;show_screen_name=false&amp;size=m&amp;time=1725737828091" style="position: static; visibility: visible; width: 76px; height: 20px;" data-screen-name="Chironjeeet"></iframe>
-			</div>
-		    </div>
-		    <div class="hero-section-sub-2">
-				<img class="hero-profile-image" alt="profile photo" src="assets/GOD.png" style="border-radius: 0; width: 240px; height: 270px;">
-				
+    <script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    const darkModeIcon = document.getElementById('darkModeIcon');
 
+    const isDarkMode = localStorage.getItem('dark-mode') === 'true';
 
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        darkModeIcon.classList.remove('fa-moon');
+        darkModeIcon.classList.add('fa-sun');
+    }
 
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
 
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeIcon.classList.remove('fa-moon');
+            darkModeIcon.classList.add('fa-sun');
+            localStorage.setItem('dark-mode', 'true');
+        } else {
+            darkModeIcon.classList.remove('fa-sun');
+            darkModeIcon.classList.add('fa-moon');
+            localStorage.setItem('dark-mode', 'false');
+        }
+    });
+    </script>
 
-			</div>
+    <div style="width:100%; margin-right:auto; margin-left:auto;">
+        <div class="hero-section-1-and-2">
 
+            <div class="hero-section">
+                <div class="hero-section-sub-1">
+                    <p style="text-align:center; font-size:32px; font-family:'Lato', Verdana, Helvetica, sans-serif;">
+                        <name></name>
+                    </p>
 
-			
-	        </div>
-	        <div class="hero-section-2">
-		    <div class="about-me-div">
-			
-			<p style="text-align: justify; font-size: 28px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">
-				                              CHIRONJEET DAS JOY
-			</p>
-				
-			<br>
-			<p style="text-align: justify;"> A Robotics Enthusiast with a Deep Passion for Crafting Innovative, Autonomous Robotic Solutions that Redefine the Possibilities of Automation and Technology. I am a graduated student working as a research assistant in <a style="color:#1772d0; text-decoration:none;" href="https://lasset.vercel.app">LaSSET</a> at the <a style="color:#1772d0; text-decoration:none;" href="https://www.bracu.ac.bd">BRAC University</a>, advised by <a style="color:#1772d0; text-decoration:none;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>.</p>
-		    </div>
+                    <div class="my-links-div">
+                        <a class="my-link" href="mailto:chironjeet.das.joy@g.bracu.ac.bd">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a class="my-link" href="assets/Chironjeet Das Joy - CV.pdf">
+                            <i class="fas fa-file-alt"></i> CV
+                        </a>
+                        <a class="my-link" href="https://www.linkedin.com/in/chironjeet-das-joy" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a class="my-link" href="https://www.researchgate.net/profile/Chironjeet-Joy" target="_blank">
+                            <i class="fab fa-researchgate"></i> ResearchGate
+                        </a>
+                        <iframe id="twitter-widget-0"
+                                scrolling="no"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allowfullscreen="true"
+                                class="twitter-follow-button twitter-follow-button-rendered"
+                                title="Twitter Follow Button"
+                                src="https://platform.twitter.com/widgets/follow_button.2f70fb173b9000da126c79afe2098f02.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=Chironjeeet&amp;show_count=false&amp;show_screen_name=false&amp;size=m"
+                                style="position: static; visibility: visible; width: 76px; height: 20px;"
+                                data-screen-name="Chironjeeet"></iframe>
+                    </div>
+                </div>
 
+                <div class="hero-section-sub-2">
+                    <img class="hero-profile-image"
+                         alt="profile photo"
+                         src="assets/GOD.png"
+                         style="border-radius:0; width:240px; height:270px;">
+                </div>
+            </div>
 
-			
-		    <div class="sub-div">
-			<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400;text-decoration: underline;">Research Interests</h2>
-			<p style="font-size: 14px; text-align: justify; font-family: 'Lato', Verdana, Helvetica, sans-serif;">
-				My research centers on dexterous robotic manipulation, multi-agent robotic systems, and perception-driven intelligence through computer vision and sensor fusion, with the goal of advancing robotic precision, adaptability, and embodied interaction. I am particularly interested in incorporating haptic feedback and human–computer interaction (HCI) to enable more intuitive, physically grounded communication between humans and robots. Leveraging my expertise in machine learning, deep learning, and visual perception, along with hands-on experience across multiple research labs, I aim to develop robotic systems that can perceive, reason, and interact with their environment and human operators in a robust, responsive, and human-centered manner.
-			</p>
-			</div>
+            <div class="hero-section-2">
 
+                <div class="about-me-div">
+                    <p style="text-align:justify; font-size:28px; font-family:'Times New Roman', Times, serif; font-weight:bold;">
+                        CHIRONJEET DAS JOY
+                    </p>
 
-			
-			<div class="sub-div">
-			<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400;text-decoration: underline;">Capstone Project/FYDP</h2>
-			</div>
+                    <br>
 
-			<div class="publication-section-div">
-				<div class="publications-section-1"style="width: 60%;">
-					<img src='assets/7dofARM.png' style="width: 80%; height: auto;" />
-				</div>
-				<div class="publications-section-2" style="width: 60%;">
-					<a style="color:#000000; text-decoration:none;font-weight: bold;" >
-					<papertitle>Unmanned System for Fetching and Shelving Drugs in Pharmaceutical Facilities</papertitle>
-					</a>
-					<em></em>
-					<br>
-					<p style="text-align: justify;">This project involves developing a fully autonomous, custom-built 7-degree-of-freedom robotic arm for pharmaceutical environments, designed and fabricated entirely on my own. It is intended for accurate shelving and retrieval of medication boxes using stereo vision and dexterous manipulation techniques, with a focus on affordability and ease of deployment. (Project Lead)</p>
-					
-				</div>
-				</div>
+                    <p style="text-align:justify;">
+                        I am an Electrical and Electronic Engineering graduate from
+                        <a href="https://www.bracu.ac.bd">BRAC University</a> and a Research Assistant at
+                        <a href="https://lasset.vercel.app">LaSSET</a>, advised by
+                        <a href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>. My work spans robotics, autonomous systems, and nonlinear control, with current research focused on adaptive modular robotic systems and thrust-vectoring aerial vehicles.
+                    </p>
+                </div>
 
+                <div class="sub-div">
+                    <h2 style="margin:0; font-size:18px; font-weight:400; text-decoration:underline;">Research Interests</h2>
+                    <p style="font-size:14px; text-align:justify;">
+                        My research interests lie in multi-robot and modular robotic systems, adaptive and geometric control, robotic manipulation, and perception-driven autonomy. I am particularly interested in systems whose morphology, dynamics, or interaction topology can change during operation, and in developing control and learning methods that remain robust under those changes. I also work with computer vision, sensor fusion, embedded systems, and machine learning for autonomous robotic platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
 
+        <div class="content-section">
 
-			
-				<div class="sub-div">
-					<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400;text-decoration: underline;">On-Going Work</h2>
-					</div>
-		
-					<div class="publication-section-div">
-						<div class="publications-section-1"style="width: 60%;">
-							<img src='assets/cansat.jpeg'style="width: 80%; height: auto;" />
-						</div>
-						<div class="publications-section-2" style="width: 60%;>
-							<a style="color:#000000; text-decoration:none;font-weight: bold;" >
-							<papertitle></papertitle>
-							</a>
-							<a style="color:#000000; text-decoration:none;font-weight: bold;" >
-							<papertitle>BRACU Diganta: An Affordable and Inclusive CanSat Education Platform</papertitle>
-							</a>
-							<em>(In progress)</em> 
-							<br>
-							<p style="text-align: justify;"> **BRACU Diganta** is a low-cost, modular CanSat education platform designed to provide hands-on training in aerospace and embedded systems engineering, particularly in resource-constrained academic environments. The satellite-in-a-can system integrates embedded processing, environmental sensing, power management, and wireless telemetry into a compact, reusable architecture that students can assemble and program. Emphasis on affordability, robustness, and ease of fabrication allows institutions with limited laboratory infrastructure to offer meaningful practical exposure to space systems. Supported by structured documentation and mission profiles, Diganta guides learners through system integration, flight testing, data acquisition, and analysis, bridging theoretical coursework with real-world engineering practice.
-                            </p>
-							</div>
+                <!-- ========================================================= -->
+                <!-- ON-GOING WORK -->
+                <!-- ========================================================= -->
 
-						</div>
-						<div class="publication-section-div">
-							<div class="publications-section-1"style="width: 60%;">
-								<img src='assets/flight.jpg' style="width: 80%; height: auto;" />
-							</div>
-							<div class="publications-section-2"style="width: 60%";>
-								<a style="color:#000000; text-decoration:none;font-weight: bold;" >
-								<papertitle>High Performance Flight Controller for Hybrid Rocket Engine</papertitle>
-								</a>
-								<em>(In progress)</em> 
-								<br>
-								<p style="text-align: justify;"> Designed and developed a custom flight controller for a hybrid rocket engine using the Teensy 4.1 microcontroller, programming in C/C++ to integrate accelerometers, gyroscopes, and pressure sensors for precise real-time data acquisition. By implementing tailored PID control algorithms, I ensured stable flight dynamics, achieving a 95% data accuracy rate during extensive simulated tests. The system was integrated with a telemetry subsystem for live ground station monitoring, showcasing my expertise in embedded systems, sensor fusion, and algorithm design. Collaborating with a multidisciplinary rocketry team, this project not only advanced our student-led aerospace initiative but also deepened my passion for solving complex engineering challenges in high-stakes environments.
+                <div class="sub-div">
+                    <h2 style="margin:0; font-size:18px; font-weight:400; text-decoration:underline;">On-Going Work</h2>
+                </div>
 
-								</p>
-							</div>
-							</div>
-							<div class="publication-section-div">
-								<div class="publications-section-1"style="width: 60%;">
-									<img src='assets/swrcon1.png' style="width: 80%; height: auto;" />
-								</div>
-								<div class="publications-section-2"style="width: 60%;>
-									<a style="color:#000000; text-decoration:none;">
-                                 <papertitle>
-                                 <strong>SwarmSync Controller Board for Modular Robotic Assembly</strong>
-                                </papertitle>
-                                     </a>
-									<em></em> 
-									<br>
-									<p style="text-align: justify;"> I designed the SwarmSync Controller Board, a key component for my project on Modular Robotic Swarm Assembly and Power-Shared Connectivity. This custom circuit integrates a Wi-Fi module, high-torque servo control, and dual power-sharing connectors to enable seamless communication, precise movement, and energy distribution among robotic modules. With onboard sensors, microcontrollers, and a robust docking mechanism, this board empowers autonomous swarm behavior for dynamic structural formations. It’s a stepping stone toward scalable, adaptive systems with potential applications in automated construction, disaster response, and space exploration. Check out the project proposal for more details on this exciting venture!
+                <div class="publication-section-div featured-project">
+                    <div class="publications-section-1 ding-video-wrap">
+                        <video class="project-video" controls playsinline preload="metadata">
+                            <source src="assets/ding_vid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
 
+                    <div class="publications-section-2 ding-text-wrap">
+                        <a style="color:#000000; font-weight:bold;">
+                            <papertitle>Adaptive Robotic Morphology</papertitle>
+                        </a>
+                        <em>(In progress)</em>
+                        <br>
 
-									</p>
-								</div>
-								</div>
-							<div class="publication-section-div">
-								<div class="publications-section-1"style="width: 60%;">
-									<img src='assets/Picture2.png' style="width: 80%; height: auto;" />
-								</div>
-								<div class="publications-section-2"style="width: 60%;>
-								<a style="color:#000000; text-decoration:none;font-weight: bold;" >
-							          <papertitle></papertitle>
-							        </a>
-									<a style="color:#000000; text-decoration:none;font-weight: bold;" >
-									<papertitle>Raven
+                        <p style="text-align:justify;">
+                            This project investigates modular robotic systems that can autonomously reconfigure their physical morphology to suit different tasks and environments. I am developing identical five-degree-of-freedom robotic modules that combine actuation, sensing, computation, communication, and mechanical connection mechanisms. The system is designed to allow multiple modules to locate one another, align and connect through predefined docking interfaces, and assemble into task-specific structures for locomotion, manipulation, obstacle traversal, stability, and payload transport. In parallel, I am developing a reinforcement-learning and simulation pipeline for configuration-adaptive control, with the long-term goal of enabling control policies that remain effective as the robot's topology and dynamics change during operation.
+                        </p>
+                    </div>
+                </div>
 
-									</papertitle>
-									</a>
-									<em></em> 
-									<br>
-									<p style="text-align: justify;"> This project addresses challenges in stabilizing drones under complex aerodynamic conditions during rescue operations. It uses an IMU on the flight controller to determine the drone's position and is exploring a Neural Network approach for improved stabilization. A custom-built controlled environment with infrared tracking cameras is being created to simulate complex scenarios and compare the drone’s 3D position with IMU data. Additionally, a unique drone tracking system, designed and built from scratch without off-the-shelf products, is being developed for custom data collection. (Project Lead) </p>
-						
-									</p>
-								</div>
-								</div>
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/flight.jpg" class="project-media" alt="Coaxial thrust-vectoring aerial vehicle">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#000000; font-weight:bold;">
+                            <papertitle>Reduced-Attitude Geometric Control for a Coaxial Thrust-Vectoring Aerial Vehicle with Explicit Actuator Geometry and Control Allocation</papertitle>
+                        </a>
+                        <em>(In progress)</em>
+                        <br>
+
+                        <p style="margin-bottom:4px;">
+                            With <a href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>
+                        </p>
+
+                        <p style="text-align:justify;">
+                            This work focuses on the control of a coaxial thrust-vectoring aerial vehicle using a reduced-attitude geometric control framework. The formulation explicitly incorporates the vehicle's actuator geometry and control-allocation structure instead of treating the propulsion system as an idealized force-and-torque source. The objective is to connect the geometric control law directly to the physical thrust-vectoring mechanism, enabling consistent mapping from commanded vehicle motion to feasible actuator inputs while accounting for the constraints and coupling introduced by the coaxial actuation architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/cansat.jpeg" class="project-media" alt="BRACU Diganta CanSat">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#000000; font-weight:bold;">
+                            <papertitle>BRACU Diganta: An Affordable and Inclusive CanSat Education Platform</papertitle>
+                        </a>
+                        <em>(In progress)</em>
+                        <br>
+
+                        <p style="text-align:justify;">
+                            <strong>BRACU Diganta</strong> is a low-cost, modular CanSat education platform designed to provide hands-on training in aerospace and embedded systems engineering, particularly in resource-constrained academic environments. The satellite-in-a-can system integrates embedded processing, environmental sensing, power management, and wireless telemetry into a compact, reusable architecture that students can assemble and program. Emphasis on affordability, robustness, and ease of fabrication allows institutions with limited laboratory infrastructure to offer meaningful practical exposure to space systems. Supported by structured documentation and mission profiles, Diganta guides learners through system integration, flight testing, data acquisition, and analysis, bridging theoretical coursework with real-world engineering practice.
+                        </p>
+                    </div>
+                </div>
 
 
-		    <div class="sub-div">
-				<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400; text-decoration: underline;">Publications</h2>
-		    </div>
-					
-			
-			<div class="publication-section-div">
-				<div class="publications-section-1">
-					<img src='assets/simu.png' width="100%" />
-				</div>
-				<div class="publications-section-2">
-					<a style="color:#1772d0; text-decoration:none;" >
-					<papertitle>Adaptive Neural Networks for Hexa-Copter Resilience in Extreme Wind Regimes on Mars.
-					</papertitle>
-					</a>
-					<br>
-					
-					<strong>Chironjeet Das Joy</strong>,
-					<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
-					<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Raihana-Antara"> Raihana Shams Islam Antara</a>,
-					<br>
-					<em>In Progress</em>
-					<br>
-					<p style="text-align: justify;">This paper presents a neural network-based stabilization algorithm for hexa-copters in Mars-like wind conditions, addressing the limitations of PID controllers that struggle with dynamic winds, causing energy inefficiency. Using a supervised learning approach, the neural network adjusts motor thrust and rotor positions to enhance stability. Simulations with Dryden and Von Kármán turbulence models generate realistic Martian wind data, integrated into a Gazebo-ROS2 environment. Performance is evaluated on positional drift, tilt error, and power consumption. Results show that NN-based controllers improve stability, reduce energy use, and offer better performance in gusty winds compared to PID controllers, with potential for future Mars exploration.</p>
-				</div>
-				</div>
+                <!-- ========================================================= -->
+                <!-- CAPSTONE PROJECT -->
+                <!-- ========================================================= -->
+
+                <div class="sub-div">
+                    <h2 style="margin:0; font-size:18px; font-weight:400; text-decoration:underline;">Capstone Project / FYDP</h2>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/7dofARM.png" class="project-media" alt="7-DoF robotic arm">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#000000; font-weight:bold;">
+                            <papertitle>Unmanned System for Fetching and Shelving Drugs in Pharmaceutical Facilities</papertitle>
+                        </a>
+                        <br>
+
+                        <p style="text-align:justify;">
+                            This project involves developing a fully autonomous, custom-built 7-degree-of-freedom robotic arm for pharmaceutical environments, designed and fabricated entirely on my own. It is intended for accurate shelving and retrieval of medication boxes using stereo vision and dexterous manipulation techniques, with a focus on affordability and ease of deployment. (Project Lead)
+                        </p>
+                    </div>
+                </div>
 
 
+                <!-- ========================================================= -->
+                <!-- PUBLICATIONS -->
+                <!-- ========================================================= -->
+
+                <div class="sub-div">
+                    <h2 style="margin:0; font-size:18px; font-weight:400; text-decoration:underline;">Publications</h2>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/simu.png" class="project-media" alt="Hexacopter simulation">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#1772d0;">
+                            <papertitle>Adaptive Neural Networks for Hexa-Copter Resilience in Extreme Wind Regimes on Mars.</papertitle>
+                        </a>
+                        <br>
+
+                        <strong>Chironjeet Das Joy</strong>,
+                        <a style="color:#9600fa;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>,
+                        <a style="color:#9600fa;" href="https://www.researchgate.net/profile/Raihana-Antara">Raihana Shams Islam Antara</a>,
+                        <br>
+
+                        <em>In Progress</em>
+                        <br>
+
+                        <p style="text-align:justify;">
+                            This paper presents a neural network-based stabilization algorithm for hexa-copters in Mars-like wind conditions, addressing the limitations of PID controllers that struggle with dynamic winds, causing energy inefficiency. Using a supervised learning approach, the neural network adjusts motor thrust and rotor positions to enhance stability. Simulations with Dryden and Von Kármán turbulence models generate realistic Martian wind data, integrated into a Gazebo-ROS2 environment. Performance is evaluated on positional drift, tilt error, and power consumption. Results show that NN-based controllers improve stability, reduce energy use, and offer better performance in gusty winds compared to PID controllers, with potential for future Mars exploration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/Rocket.jpg" class="project-media" alt="Thrust vector control research">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#1772d0;" href="https://doi.org/10.52202/083092-0045">
+                            <papertitle>Design And Optimization of Propeller-Based Thrust Vector Control Mechanism Using PID And Sensor Fusion Techniques</papertitle>
+                        </a>
+                        <br>
+
+                        <strong>Chironjeet Das Joy</strong>,
+                        <a style="color:#9600fa;" href="https://www.linkedin.com/in/mountashiour-rahman">Mountashiour Rahman</a>,
+                        <a style="color:#9600fa;" href="https://www.linkedin.com/in/md-fuad-hasan-4905772b7">Md Fuad Hasan</a>,
+                        <a style="color:#9600fa;" href="https://www.linkedin.com/in/muntaha-majed-chowdhury-5754772b7">Muntaha Majed Chowdhury</a>,
+                        <a style="color:#9600fa;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>,
+                        <br>
+
+                        <em>IAC</em>, 2025, Australia
+                        <br>
+
+                        <p style="text-align:justify;">
+                            This paper presents the design and experimental validation of a propeller-based thrust vector control (TVC) testbed for rocket and reusable launch system research. A cascaded PID control architecture is implemented to regulate position, attitude, and altitude, while sensor fusion using an Extended Kalman Filter (EKF) integrates IMU, barometer, and GPS data for accurate state estimation. The system employs contra-rotating BLDC motors with servo-driven gimbals to provide roll, pitch, and yaw authority. Comparative analysis of EKF, Mahony, and Madgwick filters shows that EKF offers superior robustness and long-term stability, particularly in yaw control. Experimental results demonstrate improved disturbance rejection, motion accuracy, and reliable stabilization for autonomous propulsion applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/dig.jpg" class="project-media" alt="BRACU Diganta">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#1772d0;" href="">
+                            <papertitle>BRACU DIGANTA: AN AFFORDABLE AND INCLUSIVE CANSAT KIT FOR HANDS-ON TRAINING OF INTRODUCTORY LEVEL STUDENTS IN DEVELOPING COUNTRIES</papertitle>
+                        </a>
+                        <br>
+
+                        <a style="color:#9600fa;" href="https://www.linkedin.com/in/muntaha-majed-chowdhury-5754772b7">Muntaha Majed Chowdhury</a>,
+                        <a style="color:#9600fa;" href="https://www.linkedin.com/in/mountashiour-rahman">Mountashiour Rahman</a>,
+                        <span style="color:#9600fa;">Mehzabin Mahmud</span>,
+                        <span style="color:#9600fa;">Kazi Abdur Rahim</span>,
+                        <span style="color:#9600fa;">Tanvir Ahmed Tonmoy</span>,
+                        <span style="color:#9600fa;">Anika Nawrinn</span>,
+                        <strong>Chironjeet Das Joy</strong>,
+                        <a style="color:#9600fa;" href="https://www.researchgate.net/profile/Raihana-Antara">Raihana Shams Islam Antara</a>,
+                        <a style="color:#9600fa;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>,
+                        <br>
+
+                        <em>IAC</em>, 2025, Australia
+                        <br>
+
+                        <p style="text-align:justify;">
+                            This paper presents <strong>BRACU Diganta</strong>, a low-cost and inclusive CanSat learning kit designed to introduce satellite systems engineering to introductory-level students in developing countries. The platform integrates mechanical, electronic, communication, software, and recovery subsystems using locally available, cost-effective components. A systems-engineering workflow was followed, including requirement analysis, preliminary and critical design reviews, and flight readiness validation. Beyond hardware, the program incorporates a structured instructional framework based on the ADDIE model and evaluates learning outcomes using Item Response Theory (IRT). Results from pilot workshops with school students show significant improvements in conceptual understanding and engagement. The work demonstrates that affordable, well-structured hands-on platforms can effectively bridge gaps in early space education.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/cube.jpg" class="project-media" alt="NanoSat training kit">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#1772d0;" href="https://doi.org/10.52202/083107-0007">
+                            <papertitle>A Low-Cost Satellite Kit to Bridge the Educational and Technological Gap in Developing Countries</papertitle>
+                        </a>
+                        <br>
+
+                        <a style="color:#9600fa;" href="https://nashihab.github.io">Nahid Ahmed Shihab</a>,
+                        <strong>Chironjeet Das Joy</strong>,
+                        <a style="color:#9600fa;" href="https://www.linkedin.com/in/mountashiour-rahman">Mountashiour Rahman</a>,
+                        <a style="color:#9600fa;" href="https://www.linkedin.com/in/muntaha-majed-chowdhury-5754772b7">Muntaha Majed Chowdhury</a>,
+                        <span style="color:#9600fa;">Prapty Majumder Golpa</span>,
+                        <span style="color:#9600fa;">Farhan Noor Showrov</span>,
+                        <a style="color:#9600fa;" href="https://www.researchgate.net/profile/Raihana-Antara">Raihana Shams Islam Antara</a>,
+                        <a style="color:#9600fa;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>,
+                        <br>
+
+                        <em>IAC</em>, 2025, Australia
+                        <br>
+
+                        <p style="text-align:justify;">
+                            This paper presents the design and development of a <strong>low-cost NanoSat Training Kit</strong> aimed at reducing barriers to space and satellite education in developing countries. The modular kit replicates key satellite subsystems including payload, electrical power system, onboard computer, communication, structure, and ground station, enabling hands-on learning across the full mission lifecycle. Developed through subsystem-level R&amp;D and iterative integration, the project bridges theory and practice while remaining affordable and accessible. The initiative led to the creation of <strong>Dipto</strong>, a space-focused startup that combines technical innovation with entrepreneurship, outreach, and policy alignment. By supporting SDG 4 (Quality Education) and the IAF 3G Diversity Agenda, the work demonstrates how inclusive, low-cost educational platforms can strengthen local space ecosystems and workforce development.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/mall.png" class="project-media" alt="Malnutrition machine learning research">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#1772d0;" href="https://arxiv.org/abs/2412.05813">
+                            <papertitle>Risk factor identification and classification of malnutrition among under-five children in Bangladesh: Machine learning and statistical approach</papertitle>
+                        </a>
+                        <br>
+
+                        <a style="color:#9600fa;" href="https://www.bracu.ac.bd/about/people/tasfin-mahmud">Tasfin Mahmud</a>,
+                        <a style="color:#9600fa;" href="https://bd.linkedin.com/in/tayab-uddin-wara-09a12221b">Tayab Uddin Wara</a>,
+                        <strong>Chironjeet Das Joy</strong>,
+                        <br>
+
+                        <em>Heliyon</em>, (Under Review)
+                        <br>
+
+                        <p style="text-align:justify;">
+                            This study examines factors contributing to malnutrition in under-five children using data from the MICS-2019 survey, employing Decision Tree, Random Forest, Support Vector Machine, and Multi-layer Perceptron (MLP) models. Random Forest and MLP showed excellent performance, with accuracies of 98.55% and 98.69%, respectively. Pearson correlation analysis revealed key factors like Weight for Age Z Score (WAZ2), Weight for Height Z Score (WHZ2), and breastfeeding status as significant contributors to malnutrition. The findings provide valuable insights into the classification and prediction of malnutrition stages.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/soyabean.png" class="project-media" alt="Soybean monitoring research">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#1772d0;" href="https://www.researchgate.net/publication/380727995_OPTIMISING_SOYBEAN_PRODUCTION_WITH_GROUND_SENSOR_TERMINAL-BASED_MONITORING_SYSTEM">
+                            <papertitle>Optimizing Soyabean Poduction With Ground Sensor Terminal-Based Monitoring System.</papertitle>
+                        </a>
+                        <br>
+
+                        <a style="color:#9600fa;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>,
+                        <strong>Chironjeet Das Joy</strong>,
+                        <a style="color:#9600fa;" href="https://www.researchgate.net/profile/Prapty-Majumder-Golpa">Prapty Majumder Golpa</a>,
+                        <a style="color:#9600fa;" href="https://www.researchgate.net/profile/Raihana-Antara">Raihana Shams Islam Antara</a>,
+                        <br>
+
+                        <em>IAC</em>, 2023
+                        <br>
+
+                        <p style="text-align:justify;">
+                            Engineered and deployed a sophisticated time series data acquisition system for the Satellite Ground Sensory Terminal Project, leveraging an array of sensory inputs to facilitate remote monitoring of agricultural fields in rural locations through the KITSUNE Satellite. This system was meticulously designed to be compact and readily deployable, playing a pivotal role in the conceptualization and successful implementation of the project. (Lead system developer)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/navo.png" class="project-media" alt="Space programme research">
+                    </div>
+
+                    <div class="publications-section-2">
+                        <a style="color:#1772d0;" href="https://www.researchgate.net/publication/378144563_Navigating_the_Challenges_of_Inflation_and_Material_Scarcity_in_Space_Programmes">
+                            <papertitle>Navigating the Challenges of Inflation and Material Scarcity in Space Programmes</papertitle>
+                        </a>
+                        <br>
+
+                        <strong>Chironjeet Das Joy</strong>,
+                        <a style="color:#9600fa;" href="https://www.researchgate.net/profile/Raihana-Antara">Raihana Shams Islam Antara</a>,
+                        <a style="color:#9600fa;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>,
+                        <br>
+
+                        <em>IAC</em>, 2023
+                        <br>
+
+                        <p style="text-align:justify;">
+                            Global inflation rose from 4.7% in 2021 to 8.8% in 2022, driven by rising fuel prices and supply chain disruptions. Electronics manufacturers face material shortages and high costs, with no immediate relief despite central banks' efforts.
+                        </p>
+                    </div>
+                </div>
 
 
-	
-		    <div class="publication-section-div">
-			<div class="publications-section-1">
-			    <img src='assets/Rocket.jpg' width="40%"  height="40%" />
-			</div>
-			<div class="publications-section-2">
-			    <a style="color:#000000; text-decoration:none;" >
-				<a style="color:#1772d0; text-decoration:none;" href="https://doi.org/10.52202/083092-0045">	
-				<papertitle>Design And Optimization of Propeller-Based Thrust Vector Control Mechanism Using PID And Sensor 
-Fusion Techniques </papertitle>
-			    </a>
-			    <br>
-				 <strong>Chironjeet Das Joy</strong>,
-			    <a style="color:#9600fa; text-decoration:none;" href="https://www.linkedin.com/in/mountashiour-rahman?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Mountashiour Rahman</a>,
-			    <a style="color:#9600fa; text-decoration:none;" href="https://www.linkedin.com/in/md-fuad-hasan-4905772b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Md Fuad Hasan</a>,
-				<a style="color:#9600fa; text-decoration:none;" href="https://www.linkedin.com/in/muntaha-majed-chowdhury-5754772b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Muntaha Majed Chowdhury</a>,
-				<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
-			  
-			    <br>
-			    <em>IAC</em>, 2025, Australia
-			    <br>
-			    <p style="text-align: justify;">This paper presents the design and experimental validation of a propeller-based thrust vector control (TVC) testbed for rocket and reusable launch system research. A cascaded PID control architecture is implemented to regulate position, attitude, and altitude, while sensor fusion using an Extended Kalman Filter (EKF) integrates IMU, barometer, and GPS data for accurate state estimation. The system employs contra-rotating BLDC motors with servo-driven gimbals to provide roll, pitch, and yaw authority. Comparative analysis of EKF, Mahony, and Madgwick filters shows that EKF offers superior robustness and long-term stability, particularly in yaw control. Experimental results demonstrate improved disturbance rejection, motion accuracy, and reliable stabilization for autonomous propulsion applications.
-				</p>	
-				</div>
-		    </div>
-			
+                <!-- ========================================================= -->
+                <!-- SELECTED GRAD COURSE AND OTHER PROJECTS -->
+                <!-- ========================================================= -->
 
+                <div class="sub-div">
+                    <h2 style="margin:0; font-size:18px; font-weight:400; text-decoration:underline;">Selected Grad Course and Other Projects</h2>
+                </div>
 
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/swrcon1.png" class="project-media" alt="SwarmSync controller board">
+                    </div>
 
+                    <div class="publications-section-2">
+                        <a style="color:#000000;">
+                            <papertitle><strong>SwarmSync Controller Board for Modular Robotic Assembly</strong></papertitle>
+                        </a>
+                        <br>
 
-	
-		    <div class="publication-section-div">
-			<div class="publications-section-1">
-			    <img src='assets/dig.jpg' width="40%"  height="40%" />
-			</div>
-			<div class="publications-section-2">
-			    <a style="color:#000000; text-decoration:none;" >
-				<a style="color:#1772d0; text-decoration:none;" href="">	
-				<papertitle>BRACU DIGANTA: AN AFFORDABLE AND INCLUSIVE CANSAT KIT FOR HANDS-ON TRAINING OF INTRODUCTORY LEVEL STUDENTS IN DEVELOPING COUNTRIES
- </papertitle>
-			    </a>
-			    <br>
+                        <p style="text-align:justify;">
+                            I designed the SwarmSync Controller Board, a key component for my project on Modular Robotic Swarm Assembly and Power-Shared Connectivity. This custom circuit integrates a Wi-Fi module, high-torque servo control, and dual power-sharing connectors to enable seamless communication, precise movement, and energy distribution among robotic modules. With onboard sensors, microcontrollers, and a robust docking mechanism, this board supports autonomous swarm behavior for dynamic structural formations and serves as an early hardware step toward scalable adaptive robotic systems.
+                        </p>
+                    </div>
+                </div>
 
-			    <a style="color:#9600fa; text-decoration:none;" href="https://www.linkedin.com/in/muntaha-majed-chowdhury-5754772b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Muntaha Majed Chowdhury</a>,
-			    <a style="color:#9600fa; text-decoration:none;" href="https://www.linkedin.com/in/mountashiour-rahman?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Mountashiour Rahman</a>,
-				<a style="color:#9600fa; text-decoration:none;" href=>Mehzabin Mahmud</a>,
-				<a style="color:#9600fa; text-decoration:none;" href=> Kazi Abdur Rahim</a>,
-				<a style="color:#9600fa; text-decoration:none;" href=> Tanvir Ahmed Tonmoy</a>,
-			    <a style="color:#9600fa; text-decoration:none;" href=>Anika Nawrinn</a>,
-				<strong>Chironjeet Das Joy</strong>,
-				<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Raihana-Antara"> Raihana Shams Islam Antara</a>,
-				<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
-					
-			    <br>
-			    <em>IAC</em>, 2025, Australia
-			    <br>
-			    <p style="text-align: justify;">This paper presents **BRACU Diganta**, a low-cost and inclusive CanSat learning kit designed to introduce satellite systems engineering to introductory-level students in developing countries. The platform integrates mechanical, electronic, communication, software, and recovery subsystems using locally available, cost-effective components. A systems-engineering workflow was followed, including requirement analysis, preliminary and critical design reviews, and flight readiness validation. Beyond hardware, the program incorporates a structured instructional framework based on the ADDIE model and evaluates learning outcomes using Item Response Theory (IRT). Results from pilot workshops with school students show significant improvements in conceptual understanding and engagement. The work demonstrates that affordable, well-structured hands-on platforms can effectively bridge gaps in early space education. 
-                 </p>	
-				</div>
-		    </div>
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/Picture2.png" class="project-media" alt="Raven drone project">
+                    </div>
 
+                    <div class="publications-section-2">
+                        <a style="color:#000000; font-weight:bold;">
+                            <papertitle>Raven</papertitle>
+                        </a>
+                        <br>
 
+                        <p style="text-align:justify;">
+                            This project addresses challenges in stabilizing drones under complex aerodynamic conditions during rescue operations. It uses an IMU on the flight controller to determine the drone's position and is exploring a Neural Network approach for improved stabilization. A custom-built controlled environment with infrared tracking cameras is being created to simulate complex scenarios and compare the drone’s 3D position with IMU data. Additionally, a unique drone tracking system, designed and built from scratch without off-the-shelf products, is being developed for custom data collection. (Project Lead)
+                        </p>
+                    </div>
+                </div>
 
-		    <div class="publication-section-div">
-			<div class="publications-section-1">
-			    <img src='assets/cube.jpg' width="40%"  height="40%" />
-			</div>
-			<div class="publications-section-2">
-			    <a style="color:#000000; text-decoration:none;" >
-				<a style="color:#1772d0; text-decoration:none;" href="https://doi.org/10.52202/083107-0007">	
-				<papertitle>A Low-Cost Satellite Kit to Bridge the Educational and Technological Gap in Developing Countries
- </papertitle>
-			    </a>
-			    <br>
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/nanosat.jpg" class="project-media" alt="NANO Satellite project">
+                    </div>
 
-			    <a style="color:#9600fa; text-decoration:none;" href="https://nashihab.github.io"> Nahid Ahmed Shihab</a>,
-			    <strong>Chironjeet Das Joy</strong>,
-				<a style="color:#9600fa; text-decoration:none;" href="https://www.linkedin.com/in/mountashiour-rahman?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Mountashiour Rahman</a>,
-				<a style="color:#9600fa; text-decoration:none;" href="https://www.linkedin.com/in/muntaha-majed-chowdhury-5754772b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Muntaha Majed Chowdhury</a>,
-				<a style="color:#9600fa; text-decoration:none;" href=> Prapty Majumder Golpa</a>,
-				<a style="color:#9600fa; text-decoration:none;" href=> Farhan Noor Showrov</a>,
-			
-				<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Raihana-Antara"> Raihana Shams Islam Antara</a>,
-				<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
-					
-			    <br>
-			    <em>IAC</em>, 2025, Australia
-			    <br>
-			    <p style="text-align: justify;">This paper presents the design and development of a **low-cost NanoSat Training Kit** aimed at reducing barriers to space and satellite education in developing countries. The modular kit replicates key satellite subsystems including payload, electrical power system, onboard computer, communication, structure, and ground station, enabling hands-on learning across the full mission lifecycle. Developed through subsystem-level R&D and iterative integration, the project bridges theory and practice while remaining affordable and accessible. The initiative led to the creation of **Dipto**, a space-focused startup that combines technical innovation with entrepreneurship, outreach, and policy alignment. By supporting SDG 4 (Quality Education) and the IAF 3G Diversity Agenda, the work demonstrates how inclusive, low-cost educational platforms can strengthen local space ecosystems and workforce development. 
-</p>	
-				</div>
-		    </div>
+                    <div class="publications-section-2">
+                        <a style="color:#000000;">
+                            <papertitle>NANO Satellite</papertitle>
+                        </a>
+                        <br>
 
+                        <p>
+                            EEE383 Electronic System Design with
+                            <a style="color:#9600fa;" href="https://abdullahilkafi.com">Abdulla Hil Kafi</a>
+                        </p>
 
+                        <p style="text-align:justify;">
+                            Partnered with five graduate students on a NANO Satellite project, focusing on data collection and transmission from multiple ground stations to a centralized control system. I was responsible for designing and implementing both the payload and communication subsystems.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="publication-section-div">
+                    <div class="publications-section-1">
+                        <img src="assets/fr.jpg" class="project-media" alt="The Flying Raijin FPV drone">
+                    </div>
 
+                    <div class="publications-section-2">
+                        <a style="color:#000000;">
+                            <papertitle>The Flying Raijin</papertitle>
+                        </a>
 
+                        <p style="text-align:justify;">(Independent project)</p>
 
+                        <p style="text-align:justify;">
+                            Named after the Fourth Hokage's teleportation technique in "Naruto," the Flying Raijin is a custom-built 5-inch FPV drone engineered for exceptional speed, accelerating from 0 to 150 km/h in just 2 seconds, as verified by the onboard GPS module. The drone utilizes an STM32 F411 MCU and operates on a 16V system. It is equipped with a high-resolution camera, a low-latency video transmitter, and multiple onboard sensors, all of which enhance the system's overall performance and capabilities.
+                        </p>
+                    </div>
+                </div>
 
+        </div>
+    </div>
 
+    <footer style="background-color:#f8f8f800; color:#333; text-align:center; padding:1rem 0; margin-top:2rem; border-top:2px solid #eeeeee00;">
+        <p>© 2026 Chironjeet Das Joy. All rights reserved.</p>
+    </footer>
 
-
-
-		    <div class="publication-section-div">
-			<div class="publications-section-1">
-			    <img src='assets/mall.png' width="100%" />
-			</div>
-			<div class="publications-section-2">
-			    <a style="color:#000000; text-decoration:none;" >
-				<a style="color:#1772d0; text-decoration:none;" href="https://arxiv.org/abs/2412.05813">	
-				<papertitle>Risk factor identification and classification of malnutrition among under-five children in Bangladesh: Machine learning and statistical approach,
-				</papertitle>
-			    </a>
-			    <br>
-			    <a style="color:#9600fa; text-decoration:none;" href="https://www.bracu.ac.bd/about/people/tasfin-mahmud"> Tasfin Mahmud</a>,
-			    <a style="color:#9600fa; text-decoration:none;" href="https://bd.linkedin.com/in/tayab-uddin-wara-09a12221b"> Tayab Uddin Wara</a>,
-			    <strong>Chironjeet Das Joy</strong>,
-			    <br>
-			    <em>Heliyon</em>, (Under Review)
-			    <br>
-			    <p style="text-align: justify;">This study examines factors contributing to malnutrition in under-five children using data from the MICS-2019 survey, employing Decision Tree, Random Forest, Support Vector Machine, and Multi-layer Perceptron (MLP) models. Random Forest and MLP showed excellent performance, with accuracies of 98.55% and 98.69%, respectively. Pearson correlation analysis revealed key factors like Weight for Age Z Score (WAZ2), Weight for Height Z Score (WHZ2), and breastfeeding status as significant contributors to malnutrition. The findings provide valuable insights into the classification and prediction of malnutrition stages.</p>
-			</div>
-		    </div>
-			
-		    <div class="publication-section-div">
-				<div class="publications-section-1">
-					<img src='assets/soyabean.png' width="100%" />
-				</div>
-				<div class="publications-section-2">
-					<a style="color:#1772d0; text-decoration:none;" href="https://www.researchgate.net/publication/380727995_OPTIMISING_SOYBEAN_PRODUCTION_WITH_GROUND_SENSOR_TERMINAL-BASED_MONITORING_SYSTEM">
-					<papertitle>Optimizing Soyabean Poduction With Ground Sensor Terminal-Based Monitoring System.
-					</papertitle>
-					</a>
-					<br>
-					<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
-					<strong>Chironjeet Das Joy</strong>,
-					<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Prapty-Majumder-Golpa"> Prapty Majumder Golpa</a>,
-					<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Raihana-Antara"> Raihana Shams Islam Antara</a>,
-					<br>
-					<em>IAC</em>, 2023
-					<br>
-					<p style="text-align: justify;">Engineered and deployed a sophisticated time series data acquisition system for the Satellite Ground Sensory Terminal Project, leveraging an array of sensory inputs to facilitate remote monitoring of agricultural fields in rural locations through the KITSUNE Satellite. This system was meticulously designed to be compact and readily deployable, playing a pivotal role in the conceptualization and successful implementation of the project. (Lead system developer)</p>
-				</div>
-				</div>
-
-				<div class="publication-section-div">
-					<div class="publications-section-1">
-						<img src='assets/navo.png' width="100%" />
-					</div>
-					<div class="publications-section-2">
-						<a style="color:#1772d0; text-decoration:none;" href="https://www.researchgate.net/publication/378144563_Navigating_the_Challenges_of_Inflation_and_Material_Scarcity_in_Space_Programmes">
-						<papertitle>Navigating the Challenges of Inflation and Material Scarcity in Space Programmes</papertitle>
-						</a>
-						<br>
-						<strong>Chironjeet Das Joy</strong>,
-						<a style="color:#9600fa; text-decoration:none;" href="https://www.researchgate.net/profile/Raihana-Antara"> Raihana Shams Islam Antara</a>,
-						<a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,
-						<br>
-						<em>IAC</em>, 2023
-						<br>
-						<p style="text-align: justify;">Global inflation rose from 4.7% in 2021 to 8.8% in 2022, driven by rising fuel prices and supply chain disruptions. Electronics manufacturers face material shortages and high costs, with no immediate relief despite central banks' efforts.</p>
-					</div>
-					</div>
-
-
-
-
-
-			
-
-			
-
-			
-		    <div class="sub-div">
-			<h2 style="margin: 0px; font-family:'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 400; text-decoration: underline;">Selected Grad Course and Other Projects</h2>
-		    </div>
-
-			
-			<div class="publication-section-div">
-				<div class="publications-section-1">
-					<img src='assets/nanosat.jpg' width="100%" />
-				</div>
-				<div class="publications-section-2">
-					<a style="color:#000000; text-decoration:none;">
-					<papertitle>NANO Satellite.
-					</papertitle>
-					</a>
-					<br> 
-					<p> EEE383 Electronic System Design with <a style="color:#9600fa; text-decoration:none;" href="https://abdullahilkafi.com"> Abdulla Hil Kafi</a>,  </p>
-					<p style="text-align: justify;">Partnered with five graduate students on a NANO Satellite project, focusing on data collection and transmission from multiple ground stations to a centralized control system. I was responsible for designing and implementing both the payload and communication subsystems.</p>
-				</div>
-				</div>
-
-
-			
-		    <div class="publication-section-div">
-			<div class="publications-section-1">
-			    <img src='assets/fr.jpg' width="100%" />
-			</div>
-			<div class="publications-section-2">
-			    <a style="color:#000000; text-decoration:none;" >
-				<papertitle> The Flying Raijin
-
-				</papertitle>
-				<p style="text-align: justify;">(Independent project)</p>
-			
-			    </a>
-				
-			    <p style="text-align: justify;">Named after the Fourth Hokage's teleportation technique in "Naruto," the Flying Raijin is a custom-built 5-inch FPV drone engineered for exceptional speed, accelerating from 0 to 150 km/h in just 2 seconds, as verified by the onboard GPS module. The drone utilizes an STM32 F411 MCU and operates on a 16V system. It is equipped with a high-resolution camera, a low-latency video transmitter, and multiple onboard sensors, all of which enhance the system's overall performance and capabilities.</p>
-			</div>
-		    </div>
-
-			
-		    
-		</div>
-	    </div>
-	</div>
-
-	
-	<footer style="background-color: #f8f8f800;color: #333;text-align: center;padding: 1rem 0;margin-top: 2rem;border-top: 2px solid #eeeeee00;">
-		<p>© 2024 Chironjeet Das Joy. All rights reserved.</p>
-	</footer>
-	
 </div>
 </body>
 </html>
-
-
